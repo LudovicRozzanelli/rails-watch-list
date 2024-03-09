@@ -1,2 +1,47 @@
 // Import page-specific CSS files here.
 @import "home";
+
+.li {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2em;
+}
+
+h1 {
+  margin: 10px 50px 20px;
+  padding-bottom: 1em;
+}
+
+a {
+  margin: 10px 50px 20px;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+.col-auto{
+  display: inline-flex;
+}
+input {
+  height: 3em;
+}
+button {
+  height: 3em;
+}
+
+.btn {
+  border-radius: 5px;
+  width: 100px;
+}
+
+img {
+  margin-bottom: 2em;
+}

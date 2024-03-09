@@ -1,7 +1,9 @@
+<h1><%= @list.name %></h1>
 <% @list.bookmarks.each do |bookmark|%>
-<%= bookmark.movie.title %>
-<%= bookmark.comment %>
+<h2 class = "movie"><%= bookmark.movie.title %></h2>
+<div class="li"><%= bookmark.comment %></div>
+<%= cl_image_tag @list.photo.key, height: 250, width: 250,  crop: :fill %>
 <% end %>
 
-
-<%= link_to "Add movie", new_list_bookmark_path(@list) %>
+<div><%= link_to "Add movie", new_list_bookmark_path(@list), class:"btn btn-primary" %>
+<%= link_to "back to list", lists_path, class:"btn btn-dark" %></div>
